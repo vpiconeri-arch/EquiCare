@@ -8,125 +8,233 @@
 
 <head>
 <!--La etiqueta meta es la configuacion de toda la pagina web-->
-<meta charset="UTF-8">
-  <meta name="description" content="EquiCare es una marca de productos para el cuidado y bienestar de los caballos">
-  <meta name="keywords" content="caballos, cuidado equino, productos ecuestres, accesorios, suplementos">
-  <meta name="author" content="Valentina Piconeri">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8">
+    <meta name="description" content="EquiCare es una marca de productos para el cuidado y bienestar de los caballos">
+    <meta name="keywords" content="caballos, cuidado equino, productos ecuestres, accesorios, suplementos">
+    <meta name="author" content="Valentina Piconeri">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+  <!--Font Awesome-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+      <link rel="stylesheet" href="css/style.css">
 
-<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
-
-<link rel="stylesheet" href="css/style.css">
-
-  <title>EquiCare| Cuidado Equino</title>
-<!--El tag de title es para como quiero que se muestre en la web-->
+    <title>EquiCare| Cuidado Equino</title>
+  <!--El tag de title es para como quiero que se muestre en la web-->
 </head>
 
 <body>
     <!--Aqui comineza el contenido principal-->
 
     <!--ENCABEZADO - HEADER-->
-<header class="sitio-header">
- <div class="container header-inner">  
-    <a href="#inicio" class="logo">
-        <span class="logo-icono">🐴</span>
-        EquiCare
+    <header class="sitio-header">
+    <div class="container header-inner">  
+        <a href="#inicio" class="logo">
+            <span class="logo-icono">🐴</span>
+            EquiCare
 
-    </a>
+        </a>
     
 
-  <nav class="main-nav">
+      <nav class="main-nav">
 
-    
-      <ul>
-   <li>
-         <a href="#inicio">Inicio</a>
-         </li>
+        
+          <ul>
+      <li>
+            <a href="#inicio">Inicio</a>
+            </li>
 
-        <li>
-         <a href="#Productos">Productos</a>
-        </li>
+            <li>
+            <a href="#servicios">Productos</a>        
+            </li>
 
-         <li>
-         <a href="#Nosotros">Nosotros</a>
-        </li>
-
-
-        <li>
-         <a href="#Contacto">Contacto</a>
-        </li>
-
-      </ul>
-     
-    </nav>
-    <button id="menu-toggle" class="menu-toggle" 
-    aria-label="Abrir menú" aria-expanded="false" 
-    aria-controls="mobile-menu">☰</button>
-    <div>
-<nav id="mobile-menu" class="mobile-nav">
-    <ul>
-
-        <li>
-         <a href="#inicio">Inicio</a>
-         </li>
-
-        <li>
-         <a href="#Productos">Productos</a>
-        </li>
-
-         <li>
-         <a href="#Nosotros">Nosotros</a>
-        </li>
+            <li>
+            <a href="#nosotros">Nosotros</a>
+            </li>
 
 
-        <li>
-         <a href="#Contacto">Contacto</a>
-        </li>
+            <li>
+            <a href="#contacto">Contacto</a>
+            </li>
+
+          </ul>
+        
+        </nav>
+    <!--Boton menú mobil-->
+    <button id="menu-toggle" class="menu-toggle" aria-label="Abrir menú" aria-expanded="false">
+                    <i class="fa-solid fa-bars"></i>
+                </button>
+            </div>
+
+    <!--Navegacion mobil-->
+        <button id="menu-toggle" class="menu-toggle" 
+        aria-label="Abrir menú" aria-expanded="false" 
+        aria-controls="mobile-menu">☰</button>
+        <div>
+    <nav id="mobile-menu" class="mobile-nav">
+        <ul>
+
+            <li>
+            <a href="#inicio">Inicio</a>
+            </li>
+
+            <li>
+            <a href="#productos">Productos</a>
+            </li>
+
+            <li>
+            <a href="#nosotros">Nosotros</a>
+            </li>
 
 
-    </ul>
+            <li>
+            <a href="#contacto">Contacto</a>
+            </li>
 
-  </nav>
+
+        </ul>
+
+      </nav>
+        </header>
 
 
-
- 
-
-    </header>
-
+    <!--INICION MAIN (PRINCIPAL) del DESARROLLO WEB-->
     <main>
+
       <!-- SECCIÓN CARRUSEL -->
 
-    <section id="carrusel" class="carousel-section container">
-      <h2>This is a Heading</h2>
+    <section id="inicio" class="hero-section">
+      <div class="carousel-track" id="carouseltrackecb"> 
 
       <!--Primera imagen EquiCare-->
-      <div class="carousel-track" id="carouseltrackecb"> 
+
         <div class="carousel-slide">
-          <img src="Charreria.jpg" alt="imagen Charreria">
+          <img src="Escaramuza.jpg" alt="imagen Charreria">
+          <div class="slide-overlay">
+                        <span class="badge">Cuidado equino premium</span>
+                        <h1>El Bienestar de tu Caballo con<span class="highlight-yellow"> EquiCare</span></h1>
+                        <p>Productos de calidad para cuidar, proteger y consentir a tu caballo </p>
+
+                        <a href="#servicios" class="btn-hero">Descubrir productos</a>
+                    </div>
 
         </div>
       <!--Segunda imagen EquiCare-->
 
         <div class="carousel-slide">
           <img src="Barriles.jpg" alt="imagen Bariles">
+          <div class="slide-overlay">
+                        <span class="badge">Higiene y Protección</span>
+                        <h1>Un Caballo Limpio <span class="highlight-yellow"> Un Caballo Feliz</span></h1>
+                        <p>ncuentra productos para su cuidado en las mejores manos.</p>
+                        <a href="#servicios" class="btn-hero">Ver productos</a>
+                    </div>
 
         </div>
       <!--Tercera imagen EquiCare-->
 
          <div class="carousel-slide">
           <img src="Carreras.jpg" alt="imagen Carreras">
+          <div class="slide-overlay">
+                        <span class="badge">Calidad para tu Caballo</span>
+                        <h1>Su Cuidado es<span class="highlight-yellow"> Nuestra Prioridad</span></h1>
+                        <p>Encuentra accesorios y productos pensados para el bienestar de tu caballo.</p>
+                        <a href="#servicios" class="btn-hero">Conócenos</a>
+                    </div>
 
         </div>
       </div>
+
+  <!-- Botones de Navegación del Carrusel -->
+            <button id="btn-prev" class="carousel-arrow prev" aria-label="Imagen anterior">
+                <i class="fa-solid fa-chevron-left"></i>
+            </button>
+            <button id="btn-next" class="carousel-arrow next" aria-label="Imagen siguiente">
+                <i class="fa-solid fa-chevron-right"></i>
+            </button>
+
+<!-- Puntos Indicadores -->
+            <div class="carousel-dots" id="carousel-dots">
+                <button class="dot active" aria-label="Ir a diapositiva 1"></button>
+                <button class="dot" aria-label="Ir a diapositiva 2"></button>
+                <button class="dot" aria-label="Ir a diapositiva 3"></button>
+            </div>
+
     </section>
 
+<!-- SECCIÓN DE SERVICIOS -->
+        <section id="servicios" class="servicios-section">
+            <div class="container">
+                <div class="section-title">
+                    <h2>NUESTROS SERVICIOS</h2>
+                    <h3>Todo para el Cuidado y Bienestar de tu Caballo</h3>
+                </div>
+          
+          <div class="cards-grid">
+                    <div class="card">
+                        <div class="card-icon yellow"><i class="fa-solid fa-couch"></i></div>
+                        <h4>Protección y Bienestar</h4>
+                        <p>Encuentra todo lo que necesitas para mantener a tu 
+                          caballo limpio, sano y bien cuidado..</p>
+                    </div>
 
-<p>This is a paragraph.</p>
+          <div class="card">
+                        <div class="card-icon red"><i class="fa-solid fa-volume-high"></i></div>
+                        <h4>Higiene y Limpieza</h4>
+                        <p>Shampoos y productos especiales para mantener el pelaje de tu caballo limpio y brillante.</p>
+                    </div>
+                <div class="card">
+                        <div class="card-icon yellow"><i class="fa-solid fa-microchip"></i></div>
+                        <h4>Accesorios Equinos</h4>
+                        <p>Encuentra cepillos, vendas y accesorios ideales para la rutina de cuidado de tu caballo.</p>
+                    </div>
+                  </div>
+                </div>
+          </section>
+
+    
+   <!-- SECCIÓN NOSOTROS -->
+        <section id="nosotros" class="nosotros-section">
+            <div class="container nosotros-inner">
+                <div class="nosotros-img">
+                    <img src="sobre nosotros.jpg" alt="sobre nosotros"> 
+                </div>
+
+                <div class="nosotros-info">
+                    <h2>SOBRE NOSOTROS</h2>
+                    <h3>Pasión por los caballos y su bienestar</h3>
+                    <p>En <strong>EquiCare</strong>, nos dedicamos a ofrecer productos de calidad para el cuidado, la higiene y la protección de los caballos.</p>
+                    <p>Nuestro objetivo es ayudar a los dueños a mantener a sus caballos limpios, saludables y felices, con productos pensados para sus necesidades.</p>
+                    <div class="stats">
+                        <div class="stat-box">
+                            <span class="stat-num yellow">+150</span>
+                            <span class="stat-lbl">Productos equinos</span>
+                        </div>
+                        <div class="stat-box">
+                            <span class="stat-num red">100%</span>
+                            <span class="stat-lbl">Calidad y cuidado</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+
+
+</section>
+
 
      </main>
+
+
+     
+
+
+
+     </main>
+
+
 <footer>
   <div class="footer-social">
     <div class="container social-icons">
